@@ -12,4 +12,5 @@ export default class OrderConsolidateData extends LightningElement {
             this.data = result.data;
         }
     }
+    //
 }
