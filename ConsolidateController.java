@@ -12,5 +12,31 @@ export default class OrderConsolidateData extends LightningElement {
             this.data = result.data;
         }
     }
+    
+    wiredMaterialRequests({ error, data }) {
+        if (data) {
+            this.materialRequests = data;
+        } else if (error) {
+            console.error('Error loading material requests:', error);
+        }
+    }
+
+    handleMaterialRequestCreated(event) {
+        // Handle material request creation, e.g., refresh the list of material requests.
+        this.refreshMaterialRequests();
+    }
+
+    refreshMaterialRequests() {
+        // You can implement a method to refresh the list of material requests when a new one is created.
+        refreshMaterialRequests({ workOrderId: this.recordId })
+            .then((result) => {
+                this.materialRequests = result;
+            })
+            .catch((error) => {
+                console.error('Error refreshing material requests:', error);
+            });
+    }
     //
 }
+
+
