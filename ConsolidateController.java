@@ -22,7 +22,7 @@ export default class OrderConsolidateData extends LightningElement {
     }
 
     handleMaterialRequestCreated(event) {
-        // Handle material request creation, e.g., refresh the list of material requests.
+        // Handle material request creation, e.g., refresh the list of material requests. TEst
         this.refreshMaterialRequests();
     }
 
