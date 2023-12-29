@@ -14,6 +14,13 @@ export default class OrderConsolidateData extends LightningElement {
             
             here
         }
+
+        if (result.data) {
+            
+            this.data = result.data;
+            
+            here
+        }
     }
     
     wiredMaterialRequests({ error, data }) {
