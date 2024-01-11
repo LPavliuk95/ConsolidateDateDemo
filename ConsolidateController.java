@@ -10,6 +10,7 @@ export default class OrderConsolidateData extends LightningElement {
 
         if (result.data) {
             
+            
             this.data = result.data;
             
             here
