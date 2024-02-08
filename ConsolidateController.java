@@ -5,6 +5,7 @@ export default class OrderConsolidateData extends LightningElement {
     @api recordId;
     @track data = [];
     @wire(getList, {orderId: '$recordId'})
+
     
     wiredData(result) {
 
