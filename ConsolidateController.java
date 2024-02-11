@@ -10,6 +10,7 @@ export default class OrderConsolidateData extends LightningElement {
     wiredData(result) {
 
         
+        
 
         
         
