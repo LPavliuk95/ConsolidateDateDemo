@@ -4,6 +4,7 @@ import getOrdersList from '@salesforce/apex/ConsolidateController.getWrapperClas
 export default class OrderConsolidateData extends LightningElement {
     @api recordId;
     
+    
     @track data = [];
     @wire(getList, {orderId: '$recordId'})
 
