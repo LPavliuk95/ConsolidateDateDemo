@@ -6,6 +6,7 @@ export default class OrderConsolidateData extends LightningElement {
     
     
     @track data = [];
+    
     @wire(getList, {orderId: '$recordId'})
 
     
